@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= Navbar ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h2>Logo</h2>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+        <div class="user-section">
+            <span class="username">Username</span>
+
+            <button class="logout-btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+        </div>
+
+    </header>
+
+    <!-- ================= Main ================= -->
+
+    <main class="container">
+
+        <!-- ================= Left Section ================= -->
+
+        <section class="left-section">
+
+            <div class="added-items">
+
+                <h2>Added Items</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>S.No</th>
+                            <th>Service</th>
+                            <th>Price</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="cart-items">
+
+                        <tr class="empty-row">
+                            <td colspan="3">
+                                <div class="empty-cart">
+                                
+                        </div>
+    </td>
+    </tr>
+
+                    </tbody>
+
+                </table>
+
+                <div class="total">
+
+                    <h3>Total Amount</h3>
+
+                    <span id="total-price">₹0</span>
+
+                </div>
+
+            </div>
+
+            <!-- Booking Form -->
+
+            <div class="booking-form">
+
+                <h2>Book Now</h2>
+
+                <form id="bookingForm">
+
+                    <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="John Doe"
+                        >
+
+                        <div class="input-group">
+
+            <div class="input-box">
+                <label for="email">Email ID</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="abc@gmail.com"
+                >
+            </div>
+
+            <div class="input-box">
+                <label for="phone">Phone Number</label>
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="0000000000"
+                >
+            </div>
+
+        </div>
+
+
+                    <button type="submit">
+
+                        Book Now
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- ================= Right Section ================= -->
+
+        <section class="right-section">
+
+            <h2>Browse Our Services</h2>
+
+            <p>
+                Click on the add to cart button to add the services to your cart or press skip
+            </p>
+
+        <div class="services-container">
+
+            <div class="service-card">
+
+        <img id="service-image" src="" alt="Service">
+
+        <div class="service-info">
+            <h3 id="service-name"></h3>
+            <h2 id="service-price"></h2>
+        </div>
+
+        <div class="btn-group">
+
+            <button class="skip-btn">
+                <i class="fa-regular fa-circle-xmark"></i>
+                Skip Item
+            </button>
+
+            <button class="add-btn">
+                <i class="fa-solid fa-circle-plus"></i>
+                Add Item
+            </button>
+
+        </div>
+
+            </div>
+
+            <p class="cart-info" style="color:#4f46e5;">
+            <i class="fa-solid fa-circle-info"></i>
+            Add the items to the cart and book now.
+            </p>
+
+        </div>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
