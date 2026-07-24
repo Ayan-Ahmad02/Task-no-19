@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Booking Website</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- ================= Navbar ================= -->
+    
 
     <header class="navbar">
 
@@ -24,7 +21,7 @@
         </div>
 
         <nav class="nav-links">
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
             <a href="#">Services</a>
             <a href="#">About Us</a>
             <a href="#">Contact Us</a>
@@ -40,11 +37,8 @@
 
     </header>
 
-    <!-- ================= Main ================= -->
 
     <main class="container">
-
-        <!-- ================= Left Section ================= -->
 
         <section class="left-section">
 
@@ -71,8 +65,10 @@
                         <tr class="empty-row">
                             <td colspan="3">
                                 <div class="empty-cart">
-                                
-                        </div>
+    <i class="fa-solid fa-circle-info"></i>
+    <p>No Items Added</p>
+    <small>Add items from the services section.</small>
+</div>
     </td>
     </tr>
 
@@ -90,20 +86,18 @@
 
             </div>
 
-            <!-- Booking Form -->
-
             <div class="booking-form">
 
                 <h2>Book Now</h2>
 
                 <form id="bookingForm">
-
-                    <label for="name">Full Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="John Doe"
-                        >
+                <label for="Full name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="John Doe"
+                    required
+                >
 
                         <div class="input-group">
 
@@ -113,16 +107,18 @@
                     type="email"
                     id="email"
                     placeholder="abc@gmail.com"
+                    required 
                 >
             </div>
 
             <div class="input-box">
-                <label for="phone">Phone Number</label>
-                <input
-                    type="text"
-                    id="phone"
-                    placeholder="0000000000"
-                >
+                <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter Password"
+                        required
+                    >
             </div>
 
         </div>
@@ -140,8 +136,6 @@
 
         </section>
 
-        <!-- ================= Right Section ================= -->
-
         <section class="right-section">
 
             <h2>Browse Our Services</h2>
@@ -154,7 +148,7 @@
 
             <div class="service-card">
 
-        <img id="service-image" src="" alt="Service">
+                <img id="service-image" src="" alt="Laundry Service">
 
         <div class="service-info">
             <h3 id="service-name"></h3>
